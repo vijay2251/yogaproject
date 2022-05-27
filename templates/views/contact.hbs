@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {{>headerlinks}} 
+    
+</head>
+<body>
+    {{>navbar}}
+
+    <!--contact page start-->
+    <div class="container-fluid contact-style mt-5 mb-5" id="contactid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <h1 class="text-center conct-head">Contact Us</h1>
+                <p class="text-center conct-sub-head">Connect us with more Convinience</p>
+                <div class="row mt-4">
+                    <div class="col-md-6 col-12">
+                        <div class="conact-main">
+                            <form action="/contact" method="POST" >
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Name</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your Good Full Name" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Phone</label>
+                                    <input type="number" class="form-control" id="exampleInputPassword2" placeholder="Your Mobile Number" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Message</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword3" placeholder="Your Message/Enquiry" name="message">
+                                </div>
+                                <button type="submit" class="btn btn-success mt-4">Submit</button>                              
+                            </form>
+                        </div>                      
+                    </div>
+                    
+                    <div class="col-md-6 col-12 pl-4">
+                          
+                        <div class="con-img mt-3">
+                            <img src="images/contact.png" alt="">
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--contact page end-->
+
+     
+      <!--footer start-->
+      {{>footer}}
+    
+</body>
+</html>
